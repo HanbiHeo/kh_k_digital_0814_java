@@ -19,6 +19,8 @@ public class BitOperate {
         System.out.println(num1 << 1); // 20, 1은 한 비트만 이동한다는 뜻. 한개의 비트를 움직이면 곱하기 2와 같음.
         System.out.println(num1 >>1); // 5, 한비트 이동시 나누기.
 
+        //
+
 
 
     }
