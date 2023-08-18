@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //GreetingEx
 //사용자로부터 이름, 제목, 날짜, 시간 정보 입력받아야함.
-public class prec3 {
+public class prac3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("이름 : ");
@@ -18,6 +18,7 @@ public class prec3 {
 
         String month = date.substring(4, 6); // 4 와 6 번째 사이의 숫자
         String greeting = ""; //문자 초기화는 "" 를 넣어주면 초기화가 됨.
+
 
         switch (month){
             case "01" : greeting = "한파의 연속인 1월 입니다."; break;
@@ -34,6 +35,8 @@ public class prec3 {
             case "12" : greeting = "한파의 연속인 12월 입니다."; break;
             default : System.out.println("알 수 없는 월입니다");
         }
+
+
         System.out.println(name + "님.");
         System.out.println(greeting);
         System.out.println("아래와 같은 일정으로 " + title + "를 진행하고자 하오니 오셔서 자리를 빛내주시기 바랍니다.");

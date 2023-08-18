@@ -1,4 +1,5 @@
 package 조건문;
+//23. 08.17 _ 1
 
 import java.util.Scanner;
 
@@ -24,17 +25,16 @@ public class ConditionEx1 {
         
         System.out.print("문자를 입력 하세요 : ");
         Scanner sc = new Scanner(System.in);
-        char ch = sc.next().charAt(0); // 문자열에서 첫번째만 취하겠다
+        char ch = sc.next().charAt(0); // 문자열에서 첫번째만 취하겠다.
+
         if(ch >= 'a' && ch <= 'z') { // a ~ z 사이의 문자(ASCII코드값의 숫자로 계산)
             System.out.println(ch + "(은)는 알파벳 소문자 입니다.");
-            if(ch >= 'a' && ch <= 'z') { // a ~ z 사이의 문자(ASCII코드값의 숫자로 계산)
-        } else if  (ch >= 'A' && ch <= 'Z'){
+            } else if  (ch >= 'A' && ch <= 'Z') {
                 System.out.println(ch + "은(는) 알파벳 대문자 입니다.");
             } else {
                 System.out.println(ch +"은(는) 알파벳이 아닙니다.");
             }
-            
+//        while (true) { // 다른 언어에서는 1(0을 제외한 모든 숫자 참)을 참으로 허용하나 자바는 허용하지 않음
+//        }
         }
-        
     }
-}
