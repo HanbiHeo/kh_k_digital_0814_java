@@ -1,4 +1,4 @@
-package 시험성적;
+package 성적조건문;
 
 import java.util.Scanner;
 
