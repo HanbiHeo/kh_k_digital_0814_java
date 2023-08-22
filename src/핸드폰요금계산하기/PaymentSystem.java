@@ -12,7 +12,7 @@ public class PaymentSystem {
         int[] call = new int[20];        //통화 횟수에 대한 통화 시간을 입력 받기위한 배열
         int yPay = 0, mPay = 0;     // 값을 누적해야 하니 초기화를 해야하니 밖에서 만들고 들어감
         Scanner sc = new Scanner(System.in);
-        System.out.println("통화 횟수를 입력하시오 : ");
+//        System.out.println("통화 횟수를 입력하시오 : ");
         int cnt = sc.nextInt(); //통화 횟수 입력받아 변수에 대입
         for(int i = 0; i < cnt; i++) { // 통화횟수당 통화시간 입력받음
 
@@ -28,7 +28,7 @@ public class PaymentSystem {
         } else if(yPay < mPay) {
             System.out.println("Y " + yPay);
         } else {
-            System.out.println("YM" + mPay);
+            System.out.println("Y M" + yPay);
         }
 
 //        System.out.println("통화 시간을 입력하시오 : ");
