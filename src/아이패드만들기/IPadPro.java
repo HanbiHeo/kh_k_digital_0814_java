@@ -88,7 +88,7 @@ public class IPadPro {
     void progressPad() throws InterruptedException {
         int  cnt = 0;
         while(true) {
-            sleep(50); // 0.3초마다 sleep
+            sleep(300); // 0.3초마다 sleep
             cnt++;
             System.out.print(" << iPad Pro 제작 중 : [ " + cnt + "% ] >>");
             System.out.print("\r"); // 커서 앞으로 당겨서 다시 작성

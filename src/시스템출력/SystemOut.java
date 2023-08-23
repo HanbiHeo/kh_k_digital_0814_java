@@ -33,11 +33,13 @@ public class SystemOut {
 //        System.out.println("평균 : " + ((double)kor + eng + mat / 3)); // 연산자 우선순위와 관련이 있음. 나눗셈 -> 덧셈
 //        System.out.println("평균 : " + ((double)(kor + eng + mat) / 3)); //연산자 우선 순위가 덧셈보다 나눗셈이 높아서 순서를 변경해야함.()소괄호를 사용하여 순서 변경.
 //        System.out.println("평균 : " + ((kor + eng + mat) / 3.0)); // 앞에 묵시적 형변환
+
         // C 언어 스타일 : 서식을 지정하는 스타일.
-        // 서식 지정자 : %d(desimal 정수), %ld(long 타입의 정수), %u(un 부호 없는 정수형), %f(실수형), %c(문자)
-        // 이스케이프 시퀀스 : 탈출하는 조건,  \n(줄바꿈 new line), \r(carrige return 캐리지 리턴, 커서를 라인의 처음으로 이동), \t(tap), \b(back space), \\
-//        System.out.printf("이름 : %s\n ",  name); // %를 넣으면 뒤에
-//        System.out.printf("오늘의 습도는 %.2f%% 입니다. \n", 85.555555); // 실수형의 출력, 소수점 이하 2자리까지 출력
+        // 서식 지정자 : %d(decimal 정수), %ld(long 타입의 정수), %u(un 부호 없는 정수형), %f(실수형), %c(문자)
+        // 이스케이프 시퀀스 : 탈출하는 조건,  \n(줄바꿈 new line), \r(carriage return 캐리지 리턴, 커서를 라인의 처음으로 이동), \t(tap), \b(back space), \\(백스페이스 하나필요하면 두개 입력)
+
+//        System.out.printf("이름 : %s\n ",  name); // %를 넣으면 뒤에 서식이 오겠구나 예측을 함. %뒤에 바로 서식 넣어주어야 함. s string
+//        System.out.printf("오늘의 습도는 %.2f%% 입니다. \n", 85.555555); // 실수형의 출력, 소수점 이하 2자리까지 반올림해서 출력 %% 두개 찍은 이유는  하나는 서식. 하나는 '%'로 인식
 //        System.out.printf("성별 : %s\n", gender); // 문자 출력
 //        System.out.println("안녕하세요. 저의 이름은 \"곰돌이사육사\" 입니다.");
 //        System.out.printf("평균 : %.2f\n ", (kor + eng + mat) / 3.0);

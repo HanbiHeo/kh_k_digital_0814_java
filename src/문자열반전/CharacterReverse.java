@@ -21,9 +21,12 @@ public class CharacterReverse {
         //다시해석
         String input = sc.next();
         int pos = input.length() - 1;//길이정보보다는 포지션이 먼저 필요 (마지막의 위치만 알면 된다.) 문자열이 반전될 시작 위치 = 랭스에서 -1의 위치
-        while (pos > -1) {
-            System.out.print(input.charAt(pos));
-            pos--;
+//        while (pos > -1) {   //선생님 풀이
+//            System.out.print(input.charAt(pos));
+//            pos--;
+//        }
+        for(int i = pos; i > -1; i--) {
+            System.out.println(input.charAt(i));
         }
     }
 }

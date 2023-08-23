@@ -11,7 +11,7 @@ public class DataTypeClass {
 //        int st1; // 숫자가 앞에오는게 아니라 가능.
 //        int_class; // class는 예약어(조건문, 반복문 등 자바에서 예약해둔 키워드)이기 때문에 안됨.
 //        int_a@; //특수문자는 _ 혹은 $ 만 가능
-        int _______1234; //가능
+        int _______1234; //가능 숫자가 앞이 아니라 가능
         int $$$$$______; //가능
         int taxRate; //camel 표기법 ; 자바는 카멜 표기법 사용함.(개발자간의 원활한 소통을 위해 관례상)
         
@@ -22,12 +22,12 @@ public class DataTypeClass {
         //논리형 변수 선언 ; 참과 거짓을 판별하기 위해서 사용하는 자료형
         boolean istrue = true; //자바에서는 true or false 값을 가짐. = boolean값을 가짐.
         // 기타 c언어나 자바 스크립트는 0을 제외한 모든 건 true  다른 언어는 0을 넣어도 false로 간주하나
-        // 자바에서는 true 혹은 false의 예약어만 사용할 수 있음.
+        // 자바에서는 true 혹은 false 의 예약어만 사용할 수 있음. 다른언어 못 옴
 
         //정수형 변수 선언(정수의 4가지 타입) : 소수점 이하가 없고 양수와 음수가 존재.
-        byte bNum; // 1Byte크기의 변수 선언. 1Byte = 8bit(256가지 경우의 수)를 양, 음수로 나눔(-128 ~ +127[0때문에 127] 까지 ; 0은 양수.)
+        byte bNum; // 1Byte크기의 변수 선언. 1Byte == 8bit(256가지 경우의 수)를 양, 음수로 나눔(-128 ~ +127[0때문에 127] 까지 ; 0은 양수.)
         short sNum; // 2Byte크기의 변수 선언.
-        int iNum; // 4Byte
+        int iNum; // 4Byte //int형을 가장 많이 씀
         long lNum; // 8Byte
         // byte, short는 잘 쓰지 않음. 이점이 없음. 네개이 데이터중 제일 빠른건 int. 프로그램은 int기준임. 21억(42억의 음,양) 바이트 보다 클 것 같으면 long
 

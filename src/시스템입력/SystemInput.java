@@ -4,6 +4,7 @@ package 시스템입력;
 import java.util.Scanner;
 
 //Scanner 클래스를 사용해서 입력 받음
+
 public class SystemInput {
     public static void main(String[] args) {
         //sc는 클래스에 대한 객체변수. 클래스는 설계도면 이라고 생각하면 됨
