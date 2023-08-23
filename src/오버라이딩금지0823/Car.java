@@ -11,9 +11,9 @@ public class Car {
         System.out.println("차의 속도를 감소 시킵니다.");
     }
 }
-class SportsCar extends Car {
+class SportCar extends Car {
     boolean isTurbo;
-    SportsCar(String name) {
+    SportCar(String name) {
         isTurbo = false;
         speed = 280;
         this.name = name;
@@ -43,6 +43,29 @@ class SportsCar extends Car {
         System.out.println("speed : " + getSpeed());
         System.out.println("color : " + color);
         System.out.println("turbo mode : " + isTurbo);
+    }
+
+}
+class ElectricCar extends Car {
+    boolean isAutoDrv;
+    ElectricCar(String name) {
+        isAutoDrv = false;
+        speed = 200;
+        this.name = name;
+        color = "White";
+    }
+    public boolean isAutoDrv() {
+        return isAutoDrv;
+    }
+    public void setAutoDrv(boolean autoDrv) {
+        isAutoDrv = autoDrv;
+    }
+    void infoCar() {
+        System.out.println("이름 : " + name);
+        System.out.println("속도 : " + speed);
+        System.out.println("색상 : " + color);
+        System.out.println("자율주행 : " + isAutoDrv);
+
     }
 
 }
