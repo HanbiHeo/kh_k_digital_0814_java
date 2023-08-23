@@ -1,11 +1,11 @@
 package 배열의복사;
-
-import java.util.Arrays;
-
 //08.21_6
 //자바의 배열은 한번 선언 하면 크기를 변경할 수 없다. 동적할당이 아니라 정적할당임.
 //배열의 크기를 변경하기 위해서는 더 큰 배열을 만들고 기존 배열의 데이터를 옮겨 담아야 함.
 //arraycopy() : System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length);
+
+import java.util.Arrays;
+
 public class ArrayCopy {
     public static void main(String[] args) {
         int[] arr1 = {1, 2, 3, 4, 5};
