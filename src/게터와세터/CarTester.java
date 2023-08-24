@@ -1,0 +1,58 @@
+package 게터와세터;
+
+public class CarTester {
+    String manufacture;
+    String modelName;
+    String color;
+    String year;
+    int maxSpeed;
+    //오른쪽마우스 -> generator ->constructor
+    public CarTester(String manufacture, String modelName, String color, String year, int maxSpeed) {
+        this.manufacture = manufacture;
+        this.modelName = modelName;
+        this.color = color;
+        this.year = year;
+        this.maxSpeed = maxSpeed;
+    }
+
+    //오른쪽마우스 -> generator  -> getter and setters
+    public String getManufacture() {
+        return manufacture;
+    }
+
+    public void setManufacture(String manufacture) {
+        this.manufacture = manufacture;
+    }
+
+    public String getModelName() {
+        return modelName;
+    }
+
+    public void setModelName(String modelName) {
+        this.modelName = modelName;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+}
