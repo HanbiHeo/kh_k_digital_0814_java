@@ -1,6 +1,6 @@
 package 익명예제어노니머스;
 //0829
-//자바에서 이름없는 객체는 주로 일화성으로 객체를 생성해야 하는 경우 사용한다.
+//자바에서 이름없는 객체는 주로 일회성으로 객체를 생성해야 하는 경우 사용한다.
 public class AnonymousObject {
     public static void main(String[] args) {
         A a = new A();
