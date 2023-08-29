@@ -1,4 +1,4 @@
-package 디폴트메소드;
+package 디폴트메소드리모컨기능;
 
 public interface RemoteControl {
     int MAX_VOLUME = 100; // 대문자는 자동으로 final static이 추가 됨. 인터페이스 소속으로 상속이 안됨.

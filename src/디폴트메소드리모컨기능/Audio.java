@@ -1,4 +1,4 @@
-package 디폴트메소드;
+package 디폴트메소드리모컨기능;
 
 public class Audio implements RemoteControl{ // 반드시 구현해야 할 메소드가 오버라이드를 통해 자동 구현. 디폴트메소드는 선택사항
     private int volume;
