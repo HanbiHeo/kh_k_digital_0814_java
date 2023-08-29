@@ -5,5 +5,5 @@ public interface Aircon {//인터페이스 만들기
     int MIN_TEMP = 0;
     void airconON();
     void airconOFF();
-    void setAirconTeap(int tmp);
+    void setAirconTemp(int tmp);
 }

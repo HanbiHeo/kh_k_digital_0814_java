@@ -31,27 +31,22 @@ public class SportsCar  extends Car implements Aircon, AutoDrive{
         System.out.println("자율 주행 : " + autoStr);
         System.out.println("터보 모드 : " + turboStr);
     }
-
     @Override
     public void airconON() {
         System.out.println("에어컨을 켰습니다.");
     }
-
     @Override
     public void airconOFF() {
         System.out.println("에어컨을 껐습니다.");
     }
-
     @Override
-    public void setAirconTeap(int tmp) {
+    public void setAirconTemp(int tmp) {
         System.out.println("에어컨을 껐습니다.");
     }
-
     @Override
     public void autoDrvON() {
         System.out.println("자율 주행 모드를 켰습니다.");
     }
-
     @Override
     public void autoDrvOFF() {
         System.out.println("자율 주행 모드를 껐습니다.");

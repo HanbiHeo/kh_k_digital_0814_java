@@ -1,5 +1,5 @@
 package 인터페이스활용;
-
+//0829
 public class InterfaceEx {
     public static void main(String[] args) {
         Customer customer = new Customer();
