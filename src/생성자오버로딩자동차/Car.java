@@ -1,4 +1,4 @@
-package 생성자오버로딩;
+package 생성자오버로딩자동차;
 
 public class Car { // 인스턴스필드
     String company = "현대자동차";

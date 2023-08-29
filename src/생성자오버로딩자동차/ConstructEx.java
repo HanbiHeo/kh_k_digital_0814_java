@@ -1,4 +1,4 @@
-package 생성자오버로딩;
+package 생성자오버로딩자동차;
 //230822_4
 public class ConstructEx {
     public static void main(String[] args) {

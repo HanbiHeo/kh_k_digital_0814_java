@@ -12,22 +12,22 @@ public class SportsCar  extends Car implements Aircon, AutoDrive{
     //generator->전부 선택해서 생성자 다 만듦
     public SportsCar(boolean isAircon, int setTemp, boolean isAutoDrv, int speed, String color, String year, boolean isTurbo) {
         this.isAircon = isAircon;
-        this.setTemp = setTemp;
         this.isAutoDrv = isAutoDrv;
+        this.isTurbo = isTurbo;
         this.speed = speed;
+        this.setTemp = setTemp;
         this.color = color;
         this.year = year;
-        this.isTurbo = isTurbo;
     }
     public void viewInfo() {
         String airConStr = (isAircon) ? "ON" : "OFF";
         String autoStr = (isAutoDrv) ? "ON" : "OFF";
         String turboStr = (isTurbo) ? "ON" : "OFF";
         System.out.println("속도 : " + speed);
+        System.out.println("에어컨 온도 : " + setTemp);
         System.out.println("색상 : " + color);
         System.out.println("제작연도 : " + year);
         System.out.println("에어컨 : " + airConStr);
-        System.out.println("에어컨 온도 : " + setTemp);
         System.out.println("자율 주행 : " + autoStr);
         System.out.println("터보 모드 : " + turboStr);
     }
