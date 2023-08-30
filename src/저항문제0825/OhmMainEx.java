@@ -24,6 +24,6 @@ public class OhmMainEx {
             if(secColor.equals(color[i])) sec = i; // 두번째 입력받은 컬러 문자열의 인덱스 값을 구함(1의자리)
             if(thdColor.equals(color[i])) thd = i; // 세번째 입력받은 컬러 문자열의 인덱스 값을 구함 (곱하는 수)
         }
-        System.out.println((long)((frt * 10) + sec) * (long)(Math.pow(10, thd)));
+        System.out.println((long)((frt * 10) + sec) * (long)(Math.pow(10, thd))); // Math.pow(연산의 밑이되는수, 거듭제곱 연산의 수) 는 거듭제곱의 연산을 수행함
     }
 }
