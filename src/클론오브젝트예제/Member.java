@@ -8,11 +8,11 @@ public class Member implements Cloneable {
     int age;
     boolean adult;
     void viewInfo() {
-        System.out.println("ID" + id);
-        System.out.println("이름" + name);
-        System.out.println("비밀번호" + password);
-        System.out.println("나이" + age);
-        System.out.println("성별" + adult);
+        System.out.println("ID : " + id);
+        System.out.println("이름 : " + name);
+        System.out.println("비밀번호 : " + password);
+        System.out.println("나이 : " + age);
+        System.out.println("성별 : " + adult);
     }
     public Member(String id, String name, String password, int age, boolean adult) {
         this.id = id;
