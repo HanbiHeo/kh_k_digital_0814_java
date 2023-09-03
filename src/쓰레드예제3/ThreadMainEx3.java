@@ -14,7 +14,7 @@ public class ThreadMainEx3 {
 }
 
 class  WorkObject {
-    //synchronized : 멀티 쓰레드 환경에서 임계영역으로의 접근을 방지하는 역할(Lock / Unlock) . synchronized 빼면 죽어버림.
+    //synchronized : 멀티 쓰레드 환경에서 임계영역으로의 접근을 방지하는 역할(Lock / Unlock) .  해당 스레드 작업중일 때 잠간 멈추는 역할. synchronized 빼면 죽어버림.
     public synchronized void methodA() {
         System.out.println("Thread의 methodA() 작업 실행");
         notify(); // 일시정지 상태(잠들어있는 상태)에 있는  ThreadB를 실행대기 상태로 만듦
