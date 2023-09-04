@@ -16,8 +16,9 @@ public class StreamEx1 {
         List<Integer> list = new ArrayList<>(Arrays.asList(arr));
         //스트림을 생성(일회용)하고 중간연산, 최종연산
 //        list.stream().filter(s->s.intValue() % 2 == 0).forEach(e->System.out.print(e + " "));
-        int sumVal = list.stream().mapToInt(e->e).sum(); // mapToInt(e, int 스트림으로 변환)
-        int count = (int) list.stream().count();
+//        int sumVal = list.stream().mapToInt(e->e).sum(); // mapToInt(e, int 스트림으로 변환)
+        int sumVal = list.stream().reduce(0, (e1, e2) -> e1 + e2);
+        int count = list.size();
         System.out.println("합계 : " + sumVal);
         System.out.println("횟수 : " + count);
     }
