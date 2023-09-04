@@ -3,6 +3,7 @@ package 스트림예제2;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 
 //0904
 //반복자 스트림 forEach() : 내부 반복자, 스트림 요소에 대한 순차 접근을 제공하며,  최종 연산에 해당함
@@ -23,8 +24,12 @@ public class StreamEx2 {
         double average = list.stream()// 스트림 생성
                 .mapToInt(Student::getScore) //메소드 참조, 중간연산
                 .average() //중간 연산
-                .getAsDouble(); //최종연산
+//                .getAsDouble(); //최종연산
+                .orElse(0.0); //만약 연산이 비어있으면 0.0으로 반환
         System.out.println("평균 : " + average);
+
+        IntStream stream = IntStream.rangeClosed(1, 100);
+        System.out.println("합계 : " + stream.sum());
 
 //        list.forEach(s->{
 //            String name = s.getName();
@@ -43,6 +48,9 @@ public class StreamEx2 {
 //            int score = s.getScore();
 //            System.out.println(name + "  :  " + score);
 //        }
+    }
+
+    private static void orElse(double v) {
     }
 }
 
