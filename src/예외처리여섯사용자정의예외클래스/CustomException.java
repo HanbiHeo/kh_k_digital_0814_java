@@ -1,6 +1,6 @@
 package 예외처리여섯사용자정의예외클래스;
 //0904
-//기본저그올 자바는 수많은 예외클래스가 있음. 하지만 사용하려는 목적에 맞는 예외처리가 없는 경우 직접 만들 수 있음.
+//기본적으로 자바는 수많은 예외클래스가 있음. 하지만 사용하려는 목적에 맞는 예외처리가 없는 경우 직접 만들 수 있음.
 public class CustomException {
     public static void main(String[] args) {
         CheckEven ce = new CheckEven();

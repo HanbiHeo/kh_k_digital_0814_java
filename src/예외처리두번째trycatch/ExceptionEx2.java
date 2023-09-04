@@ -1,11 +1,11 @@
 package 예외처리두번째trycatch;
-
+//0904
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-//0904
+
 public class ExceptionEx2 {
     public static void main(String[] args){
         try {
